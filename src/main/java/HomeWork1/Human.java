@@ -1,3 +1,5 @@
+package HomeWork1;
+
 public class Human implements CanCompetitor {
     private double runningSpeed;
     private double jumpHeight;
