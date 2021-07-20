@@ -1,3 +1,5 @@
+package HomeWork1;
+
 public class Wall {
     private double height;
 
@@ -17,3 +19,4 @@ public class Wall {
         return competitor.jump(this);
     }
 }
+//
