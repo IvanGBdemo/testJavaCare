@@ -24,11 +24,11 @@ public class AppData {
         this.data = data;
     }
 
-    //Ввожу пустой конструктор для класса
+// Ввожу пустой конструктор для класса
     public AppData() {
     }
 
-    //Создаю метод для считывания данных в файл
+// Создаю метод для считывания данных в файл
     public void saveData(String fileName) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             writer.write(rowArrToString(header));
@@ -50,12 +50,12 @@ public class AppData {
                 result += ";";
             }
         }
-        // Добавляю символ переноса строки
+// Добавляю символ переноса строки
         result += "\n";
         return result;
     }
 
-    // Составляю метод для чтения данных из файла
+// Составляю метод для чтения данных из файла
     public void loadData(String fileName) {
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName))) {
             header = bufferedReader.readLine().split(";");
