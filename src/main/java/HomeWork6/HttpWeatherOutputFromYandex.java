@@ -8,7 +8,7 @@ import okhttp3.Response;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class httpWeatherOutputFromYandex {
+public class HttpWeatherOutputFromYandex {
     //    public static void main(String[] args) throws IOException {
 // Обозначаю элементы запроса к серверу
 // https://api.weather.yandex.ru/v2/forecast/
@@ -64,6 +64,8 @@ public class httpWeatherOutputFromYandex {
 
         Request request = new Request.Builder()
                 .url(httpUrl)
+                .addHeader("Content-Type", "application/json")
+                .addHeader("X-Yandex-API-Key", "12ae7464-11d2-4699-b655-39a7b036da1d")
                 .get()
                 .build();
 
