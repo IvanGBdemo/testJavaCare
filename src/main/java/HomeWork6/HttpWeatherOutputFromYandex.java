@@ -65,7 +65,7 @@ public class HttpWeatherOutputFromYandex {
         Request request = new Request.Builder()
                 .url(httpUrl)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("X-Yandex-API-Key", keyYandexApi)
+                .addHeader("X-Yandex-API-Key", "12ae7464-11d2-4699-b655-39a7b036da1d")
                 .get()
                 .build();
 
