@@ -8,7 +8,7 @@ import okhttp3.Response;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class httpWeatherOutputFromYandex {
+public class HttpWeatherOutputFromYandex {
     //    public static void main(String[] args) throws IOException {
 // Обозначаю элементы запроса к серверу
 // https://api.weather.yandex.ru/v2/forecast/
@@ -81,29 +81,3 @@ public class httpWeatherOutputFromYandex {
         }
     }
 }
-
-// Код запроса содержимого страницы с урока 6
-// Для начала работы с Postman создаю клиент
-//        OkHttpClient okHttpClient = new OkHttpClient()
-//                .newBuilder()
-//// Заполняю параметры клиента
-//                .readTimeout(10, TimeUnit.SECONDS)
-//                .build();
-//// Создаю экземпляр класса веб-адреса, на который буду посылать запрос
-//        HttpUrl url = new HttpUrl.Builder()
-//                .scheme("https")
-//                .host("yandex.ru")
-//                .addPathSegment("dev/weather/doc/dg/concepts/about.html")
-//                .build();
-//// Описываю запрос, который буду выполнять
-//        Request request = new Request.Builder()
-//                .url(url)
-//                .get()
-//                .build();
-//// Отправляю созданный запрос на сервер
-//        Response response = okHttpClient.newCall(request).execute();
-//
-//        System.out.println(response.code());
-//        System.out.println(response.headers());
-
-//    }
